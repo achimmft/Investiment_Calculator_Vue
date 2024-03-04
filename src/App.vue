@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderBlock />
+  <UserInput />
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderBlock from './components/HeaderBlock.vue'
+import UserInput from './components/UserInput.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderBlock,
+    UserInput
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: radial-gradient(#303b37, #1a1f1d);
+  color: #e1eeeb;
+  min-height: 100vh;
 }
 </style>
